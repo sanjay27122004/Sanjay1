@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Adhiparasakthi Engineering College</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Login - Adhiparasakthi Engineering College</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 150px;
+      height: auto;
+    }
+
+    .login-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: #b30000;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login-box input[type="submit"] {
+      background-color: #b30000;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .login-box input[type="submit"]:hover {
+      background-color: #990000;
+    }
+  </style>
 </head>
 <body>
-    <div class="login-container">
-        <div class="logo-wrapper">
-            <img src="your-logo.png" alt="Adhiparasakthi Engineering College Logo" class="college-logo">
-        </div>
-        <form class="login-form" action="/login" method="post">
-            <h2>Welcome Back!</h2>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Log In</button>
-            <div class="footer-links">
-                <a href="#">Forgot Password?</a>
-                <span>&bull;</span>
-                <a href="#">Sign Up</a>
-            </div>
-        </form>
-    </div>
+
+  <div class="logo">
+    <img src="logo.png" alt="Adhiparasakthi Engineering College Logo">
+  </div>
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form action="#">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
 </body>
 </html>
+
